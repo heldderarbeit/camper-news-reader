@@ -8,6 +8,7 @@ Utilized Libraries:
 - [jQuery Scrollbar 0.2.10](https://github.com/gromo/jquery.scrollbar/)
 - [Hint.css 2.0.0](http://kushagragour.in/lab/hint/)
 - [Font Awesome 4.5.0](http://fontawesome.io)
+- [RoboHash Avatars](https://robohash.org/)
 
 ##Demo
 http://codepen.io/heldderarbeit/full/MKBabx
