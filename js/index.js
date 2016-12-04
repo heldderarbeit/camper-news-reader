@@ -2,14 +2,12 @@ var apiurl =
   "https://crossorigin.me/https://www.reddit.com/r/FreeCodeCamp/top.json?t=week";
 
 $.getJSON(apiurl, function (response) {
-
   $(".loading-div").remove();
 
   var posts = response.data.children;
 
-  $.each(posts, function (index,
-    post) {
-
+  $.each(posts, function (index, post) {
+    
     var username = post.data.author;
     var posturl = post.data.url;
     var redditurl = post.data.permalink;
@@ -49,7 +47,6 @@ $.getJSON(apiurl, function (response) {
 
     if (index < 25) {
       $(".posts-div").append(
-        
         "<div class='post-div'>" + 
         
         "<img class='post-icon' alt='User avatar' width='74' height='74' src='" 
@@ -75,7 +72,6 @@ $.getJSON(apiurl, function (response) {
           fullheadline);
       }
     }
-
   });
   setPostsDivHeight();
 });
